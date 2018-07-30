@@ -10,6 +10,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+import com.springmvcdemo.model.Employee;
+
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages ="com.springmvcdemo")
@@ -30,6 +32,15 @@ public class AppConfig extends WebMvcConfigurerAdapter{
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();
 	}
+	
+	@Bean
+	public Employee employee(){
+		Employee emp=new Employee();
+		emp.setName("jenit");
+
+		return emp;
+	}
+	
 }
 
 
