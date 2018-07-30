@@ -7,9 +7,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HelloController {
+public class AppController {
 	@GetMapping("/gettime")
-	public String hello(Model model) {
+	public String getTime(Model model) {
 
 		model.addAttribute("current_time", new Date());
 
