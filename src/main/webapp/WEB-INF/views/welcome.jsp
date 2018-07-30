@@ -6,8 +6,8 @@
 	<link rel='stylesheet' href='<c:url value="/resources/css/style.css" />' type='text/css' media='all' /> 
 </head>
 <body>
-	<h2>Hello World, Spring MVC</h2>
+	<h2>Spring MVC Demo</h2>
 
-	<p>Welcome, ${name}</p>
+	<p>current time, ${current_time}</p>
 </body>
 </html>
