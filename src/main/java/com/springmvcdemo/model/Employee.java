@@ -38,13 +38,12 @@ public class Employee implements Serializable{
 	public void setName(String name) {
 		this.name = name;
 	}
-	
 	@JsonSerialize(using=DateSerializer.class)
 	public Date getCreatedDate() {
 		return createdDate;
 	}
 	public void setCreatedDate(Date createdDate) {
 		this.createdDate = createdDate;
-	}
-	
+	}	
+
 }
